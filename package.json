@@ -27,6 +27,7 @@
   },
   "keywords": [
     "micro",
+    "microservice",
     "statsd",
     "statsy"
   ],
