@@ -3,7 +3,11 @@ const Client = require('statsy')
 function track (options, handler) {
   if (!handler) {
     handler = options
-    options = {}
+    options = {
+      prefix: process.env.STATSD_PREFIX,
+      host: process.env.STATSD_HOST,
+      port: process.env.STATSD_PORT
+    }
   }
   const stats = new Client(options)
   return (req, res) => {

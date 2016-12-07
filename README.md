@@ -30,7 +30,7 @@ module.exports = track(options, function (req, res) {
 
 ### Options
 
-* `host` - optional statsd host
-* `port` - optional statsd port
-* `prefix` - optional statsd prefix ('.' is appended)
+* `host` - optional statsd host [process.env.STATSD_HOST]
+* `port` - optional statsd port  [process.env.STATSD_PORT]
+* `prefix` - optional statsd prefix ('.' is appended) [process.env.STATSD_PREFIX]
 * `tcp` - use TCP instead of UDP
